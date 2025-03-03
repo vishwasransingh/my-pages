@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<style>
+            pre.code{
+                background-color: blue;
+                color: white;
+                border: 2px solid black;
+                padding-top: 10px;
+            }
+        </style>   -->
+        <link rel="stylesheet" href="style_sheet.css">
+    </head>
+    <body>
+        <h3>Image Maps</h3>
+        With image maps, we can add clickable areas. <mark>&lt;map&gt; tag defines an image map.</mark>
+        <hr>
+        Clickable Areas are defined using certain elements:
+        <ul>
+            <li><b>map :</b> Used to create an image map. is linked to image using <b>name</b> attribute.</li>
+            <li><b>area :</b> Used to define the clickable area.</li>
+            <li><b>shape :</b> Defines the shape of clickable area. Can be rect, circle, poly, default (entire region).</li>
+            <li><b>coords :</b> Defines coordinates.</li>
+        </ul>
+        <mark>The clickable area can also be used to trigger a JavaScript function.</mark>
+        <hr>
+
+        example:
+        <pre class="code">
+            &lt;map&gt;
+            &lt;img src="img_name.jpg" alt="alt_text" usemap="#map_name"&gt;
+            &lt;map name="map_name"&gt;
+            &lt;area shape="rect" coords="34,44,270,350" alt="click_1_alt" href="computer.htm"&gt;
+            &lt;area shape="rect" coords="290,172,333,250" alt="click_2_alt" href="phone.htm"&gt;
+            &lt;area shape="circle" coords="337,300,44" alt="click_3_alt" href="coffee.htm"&gt;
+            &lt;/map&gt;
+        </pre>
+        <hr>
+
+        <img src="wedding.png" alt="A wedding" width="500" height="500" usemap="#wedding">
+        <map name="wedding">
+                <area shape ="circle" coords="284, 244, 30" href="vishwas.JPG">
+                <area shape="circle" coords="221, 253, 25" href="arti.jpg">
+                <area shape="circle" coords="252, 341, 10" href="vishwas-arti.JPG">
+        </map>
+        <hr>
+
+        <h3>Background images</h3>
+        Can be specified for any element as well as for whole page (body element).
+        <pre class="code">
+            &lt;div style="background-image: url('img_name.jpg');"&gt;
+        </pre>
+        Other examples:
+        <pre class="code">
+            &lt;style&gt;
+                body {
+                  background-image: url('image_name.jpg');
+                  background-repeat: no-repeat;====> to avoid the background image from repeating
+                  background-attachment: fixed;====> to make sure that image covers te entire element 
+                  background-size: cover;==========> to cover entire element with no stretching
+                  background-size: 100% 100%;======> to stretch the image to match the area
+                }
+            &lt;/style&gt;
+        </pre>
+        <hr>
+
+        <h3>Picture element</h3>
+        <p>
+            Allows us to display different pictures for different
+             devices or screen sizes.
+        </p>
+        <p>The &lt;picture&gt; element contains a number of &lt;source&gt; 
+            elements, each referring to different image sources. 
+            This way the browser can choose the image that best fits 
+            the current view and/or device.
+        </p>
+        <p>Each &lt;source&gt; element have attributes describing 
+            when their image is the most suitable.
+        </p>
+        <pre class="code">
+            &lt;picture&gt;
+            &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;
+            &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;
+            &lt;img src="img_girl.jpg"&gt;
+            &lt;/picture&gt;
+        </pre>
+        <p><b style="color:red">Note:</b>It is recommended to specify an &lt;img&gt; 
+        element as the last child element of the picture element so that the browsers
+        which dont support picture element could use them.</p>
+        <hr>
+
+    </body>
+</html>

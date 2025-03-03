@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<h1>
+Arithmatic Operations
+</h1>
+<body>
+    <p id="display"></p>
+    <script>
+        const num1 = parseFloat(prompt('Enter the first number '));
+        const num2 = parseFloat(prompt('Enter the second number '));
+
+        function add()
+        {
+            const result = num1 + num2;
+            document.write("Addition is:",result)
+            //document.getElementById("display").innerHTML = result;
+        }
+        
+        function sub()
+        {
+            const result = num1 - num2;
+            document.write("Subtraction is:",result)
+            //document.getElementById("display").innerHTML = result;
+        }
+
+        function div()
+        {
+            const result = num1 / num2;
+            document.write("Division is:",result)
+            //document.getElementById("display").innerHTML = result;
+        }
+
+        function mult()
+        {
+            const result = num1 * num2;
+            document.write("Multiplication is:",result)
+            //document.getElementById("display").innerHTML = result;
+        }
+
+        //document.getElementById("display").innerHTML = sum;
+    </script>
+
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mult()">Multiplication</button>
+    
+
+
+</body>

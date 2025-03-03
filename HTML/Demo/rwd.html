@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .code{
+                color:lime;
+                background-color: darkslategray;
+                border: 2px solid black;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Responsive web design</h1>
+        <p>It is about using html and css to automatically resize, hide, shrink or enlarge a website to make it look good on all the devices with different screen sizes.</p>
+        <hr>
+
+        <h4>Viewport</h4>
+        <p class="code">Syntax: &lt;meta name="viewport" content="width=device-width, initial scale=1.0"&gt;</p>
+        <hr>
+
+        <h4>Responsive images</h4>
+        <p>If the CSS width property is se to 100%, the image will be responsive and scale up and down.</p>
+        <p class="code">Syntax: &lt;img src="imgname.jpg" syle="width:100%;"&gt;</p>
+        <p>If the <mark>max-width</mark> property is set to 100%, the image will scale down if it has to, but will never scale up than its original size.</p>
+        <p><mark>picture</mark> element allows you to define different images for different browser window sizes.</p>
+        <pre class="code">
+            &lt;picture&gt;
+                &lt;source srcset="img_smallflower.jpg" media="(max-width: 600px)"&gt;
+                &lt;source srcset="img_flowers.jpg" media="(max-width: 1500px)"&gt;
+                &lt;source srcset="flowers.jpg"&gt;
+                &lt;img src="img_flowers.jpg" alt="Flowers" style="width:auto;"&gt;
+            &lt;/picture&gt;
+        </pre>
+        <hr>
+
+        <h4>Responsive text</h4>
+        <p>Text sizes can be set with a "vw" (viewport width) unit.</p>
+        <p>Tha way the text size will follow the size of the browser window.</p>
+        Syntax: <div class="code">&lt;h1 style="font-size:10vw">Hello World&lt;/h1&gt;</div>
+        <hr>
+        
+        <h4>Responsive web page</h4>
+        Should look good both on lare screens as well as small screens.
+        <pre class="code">
+            &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;style&gt;
+                    * {
+                        box-sizing: border-box;
+                    }
+                    .menu {
+                        float:left;
+                        width:20%;
+                        text-align:center;
+                    }
+                    .menu a {
+                        background-color:#e5e5e5;
+                        padding:8px;
+                        margin-top:7px;
+                        display:block;
+                        width:100%;
+                        color:black;
+                    }
+                    .main {
+                        float:left;
+                        width:60%;
+                        padding:0 20px;
+                    }
+                    .right {
+                        background-color:#e5e5e5;
+                        float:left;
+                        width:20%;
+                        padding:15px;
+                        margin-top:7px;
+                        text-align:center;
+                    }
+
+                    @media only screen and (max-width:620px) {
+                        /* For mobile phones: */
+                        .menu, .main, .right {
+                             width:100%;
+                        }
+                    }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body style="font-family:Verdana;color:#aaaaaa;"&gt;
+            &lt;div style="background-color:#e5e5e5;padding:15px;text-align:center;"&gt;
+                &lt;h1>Hello World &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div style="overflow:auto"&gt;
+            &lt;div class="menu"&gt;
+            &lt;a href="#"&gt;Link 1 &lt;/a&gt;
+            &lt;a href="#"&gt;Link 2 &lt;/a&gt;
+            &lt;a href="#"&gt;Link 3 &lt;/a&gt;
+            &lt;a href="#"&gt;Link 4 &lt;/a&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class="main"&gt;
+            &lt;h2&gt;Lorum Ipsum &lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. &lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class="right"&gt;
+            &lt;h2>About &lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com &lt;/div&gt;
+
+        &lt;/body&gt;
+
+    &lt;/html&gt;
+
+        </pre>
+    </body>
+</html>

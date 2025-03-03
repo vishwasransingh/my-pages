@@ -1,0 +1,14 @@
+pre.code{
+    background-color:rgba(0, 0, 0, 0.797);
+    color:rgba(53, 254, 53, 0.977);
+    padding-top: 10px;
+}
+
+body{
+    background-color: rgba(202, 196, 196, 0.438);
+}
+
+list{
+    background-color: gray;
+    color: white;
+}

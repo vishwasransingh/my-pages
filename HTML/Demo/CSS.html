@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS</title>
+</head>
+<body style = "background-color: rgb(229, 218, 203);">
+    <h2 style="background-color: #ffb300; text-align: center; border: 2px solid black;">Styling HTML with CSS</h2>
+    <p style="border: 2px solid blue;">
+        CSS describes how HTML elements are to be displayed on screen, paper or in other media. It can be added in 3 ways:</p>
+        <ol style="background-color: floralwhite;">
+            <li><b>Inline : </b>By using style attribute in html elements. Used to apply a unique style to single element.</li>
+            <li><b>Internal : </b>By using style element in head section. Used to define a style for a single html page.</li>
+            <li><b>External : </b>by using an external CSS file.</li>
+        </ol>
+        <ul>
+            <li>CSS can control the layout of web pages all at once.</li>
+            <li>The most common way to add CSS is to keep styles in separate CSS files.</li>
+        </ul>
+    <hr>
+    <p>
+        <h4>Internal CSS:</h4>
+            To be defined in style tag. ex:
+            <pre style="background-color: blue;color:white; padding-top: 10px; text-align:left; border:2px solid black;">
+                <i>style_tag</i>
+                h1 {
+                    color: blue;
+                    font-family: verdana;
+                    font-size: 300%;
+                  }
+                  p  {
+                    color: red;
+                    font-family: courier;
+                    font-size: 160%;
+                  }
+                  <i>style_tag_end</i>
+            </pre>
+        </p>
+    <hr>
+
+    <h4>The id Attribute</h4>
+            <p>
+                To define a specific style for one special element, add an <code class="w3-codespan">id</code> attribute to the element:
+            </p>
+
+            <pre><div style="background-color: blue; color: white; border: 2px solid black;">
+                &lt;p id=&quot;p01&quot;&gt;I am different&lt;/p&gt;
+            </div></pre>
+            
+            <p>
+                then define a style for the element with the specific id:
+            </p>
+            <pre>
+                #p01 {
+                    color: blue;
+                }
+            </pre>
+            
+    <hr>
+
+    <h4>The class attribue</h4>
+            <p>To define a specific style for one special element.</p>
+            <pre>
+                &lt;p class="error"&gt;I am different&lt;/p&gt;
+            </pre>
+
+            <pre style="background-color: blue; color:white; border: 2px solid black; padding-top: 10px;">
+                p.error{
+                    color: red;
+                }
+            </pre>
+
+    <h4>External references:</h4>
+    <p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+    <p>Full URL to link to a style sheet:</p>
+    <pre style="background-color: blue; color: white; border: 2px solid black; padding-top: 10px;">
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.xyz.come/html/styles.css&quot;&gt;
+    </pre>
+    <p>Link to style sheet located in the html folder on the current website:</p>
+    <pre>
+        &lt;link rel="stylesheet" href=&quot/html/styles.css&quot;&gt;
+    </pre>
+
+</body>
+</html>
