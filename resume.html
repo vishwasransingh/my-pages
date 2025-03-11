@@ -8,58 +8,128 @@
 </head>
 <body class="bg-gray-100 flex justify-center py-10">
     <div class="w-full max-w-3xl bg-white shadow-lg rounded-xl p-8">
+        <!-- Profile Section -->
         <div class="text-center">
-            <img src="resources/profile-image.jpg" alt="Profile Picture" class="mx-auto rounded-full border-4 border-blue-500">
-            <h1 class="text-3xl font-bold text-gray-800 mt-4">Vishwas Ransingh</h1>
-            <p class="text-gray-600">Java Developer</p>
+            <img src="resources/profile-image.jpg" alt="Profile Picture" class="mx-auto rounded-full border-4 border-blue-500 w-32 h-32">
+            <h1 class="text-3xl font-bold text-gray-800 mt-4">VISHWAS RANSINGH</h1>
+            <p class="text-gray-600">Junior Developer</p>
         </div>
 
+        <!-- Contact Info -->
         <div class="mt-6 text-center text-gray-700">
             <p>Email: vishwasransingh@gmail.com | Phone: +91 7743898263</p>
-            <p>Location: Pune, Maharashtra | https://www.linkedin.com/in/vishwas-ransing</p>
+            <p>Location: Ahmednagar, Maharashtra | 
+                <a href="https://www.linkedin.com/in/vishwas-ransing" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a> |
+                <a href="https://github.com/vishwasransingh" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
+            </p>
         </div>
 
         <hr class="my-6 border-gray-300">
 
+        <!-- Professional Summary -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800">Professional Summary</h2>
+            <p class="text-gray-700 mt-2">
+                Java Professional with hands-on experience in building scalable web applications using Spring Boot, React, and MySQL. Proven expertise in improving system efficiency and customer experience. Strong problem-solving skills and a quick learner, committed to delivering high-quality solutions.
+            </p>
+        </div>
+
+        <hr class="my-6 border-gray-300">
+
+        <!-- Experience -->
         <div>
             <h2 class="text-xl font-semibold text-gray-800">Experience</h2>
+
+            <!-- AlgorithmCAT -->
             <div class="mt-4">
-                <h3 class="text-lg font-semibold">Java Developer Intern - OnlineABC Tech</h3>
-                <p class="text-gray-600 text-sm">Feb 2024 - Aug 2024</p>
-                <p class="text-gray-700 mt-2">Developed high-performance web applications using Spring Boot, MySQL, and React.</p>
+                <h3 class="text-lg font-semibold">Java Developer Intern - AlgorithmCAT</h3>
+                <p class="text-gray-600 text-sm">Feb 2024 - Jul 2024</p>
+                <p class="text-gray-700 mt-2">
+                    <strong>MyCards:</strong> Developed a platform to provide insights into banking card details, offers, and reward points. 
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Developed secure APIs with encryption (AES) and hashing (Argon2).</li>
+                        <li>Added OAuth2.0 and Gmail API integration for email-based notifications.</li>
+                        <li>Enhanced performance using multithreading, reducing response time.</li>
+                        <li>Integrated Google Gemini for chatbot functionality in the web UI.</li>
+                        <li>Created Postman collections and OpenAPI documentation.</li>
+                    </ul>
+                </p>
             </div>
+
+            <!-- ChingiRingi -->
             <div class="mt-4">
-                <h3 class="text-lg font-semibold">Jr. Developer - AlgorithCAT</h3>
-                <p class="text-gray-600 text-sm">Sept 2024 - Present</p>
-                <p class="text-gray-700 mt-2">Developed high-performance web applications using React, Spring Boot, and MySQL.</p>
+                <h3 class="text-lg font-semibold">Java Developer Intern - ChingiRingi</h3>
+                <p class="text-gray-600 text-sm">Feb 2024 - Jul 2024</p>
+                <p class="text-gray-700 mt-2">
+                    Developed chat and KYC APIs, integrated AWS S3 for file storage. 
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Set up secure file upload/download using pre-signed URLs.</li>
+                        <li>Deployed backend on AWS using Elastic Beanstalk.</li>
+                        <li>Designed and optimized SQL queries for AWS RDS.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- OnlineABC -->
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold">Java Developer Intern - OnlineABC</h3>
+                <p class="text-gray-600 text-sm">Feb 2024 - Jul 2024</p>
+                <p class="text-gray-700 mt-2">
+                    Developed UMS-Global, a comprehensive business management system.  
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Built secure user onboarding APIs, reducing registration time by 50%.</li>
+                        <li>Improved code quality by conducting peer reviews and fixing bugs.</li>
+                    </ul>
+                </p>
+                <p class="text-gray-700 mt-2">
+                    <strong>Book Store Web Application:</strong> Contributed to the development and deployment of an e-commerce platform.
+                    <ul class="list-disc list-inside mt-2 text-gray-600">
+                        <li>Integrated a payment gateway, increasing customer conversion rate by 30%.</li>
+                        <li>Ensured secure transactions and reduced cart abandonment by 20%.</li>
+                    </ul>
+                </p>
             </div>
         </div>
 
         <hr class="my-6 border-gray-300">
 
+        <!-- Education -->
         <div>
             <h2 class="text-xl font-semibold text-gray-800">Education</h2>
             <div class="mt-4">
-                <h3 class="text-lg font-semibold">Bachelor of Engineering</h3>
-                <p class="text-gray-600 text-sm">SIT Lonavala | 2015 - 2019</p>
+                <h3 class="text-lg font-semibold">Bachelor of Engineering (Information Technology)</h3>
+                <p class="text-gray-600 text-sm">Sinhgad Institute of Technology, Lonavala | 2015 - 2019</p>
             </div>
         </div>
 
         <hr class="my-6 border-gray-300">
 
+        <!-- Skills -->
         <div>
             <h2 class="text-xl font-semibold text-gray-800">Skills</h2>
             <div class="mt-4 flex flex-wrap gap-2">
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Core and Advanced Java</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Core Java</span>
                 <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Spring Boot</span>
                 <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">React.js</span>
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Software Deployment</span>
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">RDBMS</span>
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">SQL</span>
-                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Git</span>
                 <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Docker</span>
                 <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">AWS</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">OAuth2.0</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Git</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Jira</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm">Postman</span>
             </div>
+        </div>
+
+        <hr class="my-6 border-gray-300">
+
+        <!-- Certifications -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800">Certifications</h2>
+            <ul class="list-disc list-inside mt-2 text-gray-600">
+                <li>Core Java Certification</li>
+                <li>Spring 3 and Spring Boot 6 Certification</li>
+                <li>Java Skill Validation Certification</li>
+            </ul>
         </div>
     </div>
 </body>
